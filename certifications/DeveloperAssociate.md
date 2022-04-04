@@ -105,7 +105,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Utilize AWS services (e.g., Amazon CloudWatch, VPC Flow Logs, and AWS X-Ray) to locate a
     specific faulty component
 
-### Key tools, technologies, and concepts
+### Key Tools, Technologies, and Concepts
 
 - Analytics
 - Application Integration
