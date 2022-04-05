@@ -105,7 +105,7 @@ An IAM user with Administrator permissions is not the same as the account root u
 
 Provides trusted or federated users with IAM temporary credentials via IAM roles.
 
-You get a session with is made up of:
+You get a session, which is made up of:
 
 - Access Key Id
 - Secret Access Key
@@ -116,15 +116,16 @@ You get a session with is made up of:
 
 Authenticate using external identities (federated users), this allows the ability to grant access to AWS without having to create IAM users. It uses AWS STS to link up the user with temporary credentials.
 
-Could be:
+#### Web identity federation
 
-- Web identity federation
-  - Amazon Cognito
-  - Log in with Amazon
-  - Facebook
-  - Google
-  - OpenID Connect (OIDC)
-- SAML 2.0 (Security Assertion Markup Language 2.0) based federation
-  - Microsoft Active Directory
-  - LDAPS
-  - Open LDAP
+- Amazon Cognito
+- Log in with Amazon
+- Facebook
+- Google
+- OpenID Connect (OIDC)
+
+#### SAML 2.0 (Security Assertion Markup Language 2.0) based federation
+
+- Microsoft Active Directory
+- LDAPS
+- Open LDAP
