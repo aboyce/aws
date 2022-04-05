@@ -30,7 +30,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Manage environments in individual AWS services (e.g., Differentiate between Development,
     Test, and Production in Amazon API Gateway)
 
-### Domain 2: Security
+### Domain 2: [Security](../Security.md)
 
 - 2.1 Make authenticated calls to AWS services.
   - Communicate required policy based on least privileges required by application.

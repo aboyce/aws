@@ -7,3 +7,5 @@
 ## Core Sections
 
 ### [Deployment](/Deployment.md)
+
+### [Security](/Security.md)
