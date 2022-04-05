@@ -2,7 +2,7 @@
 
 _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf)_
 
-### Domain 1: Deployment
+### Domain 1: [Deployment](../Deployment.md)
 
 - 1.1 Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns.
   - Commit code to a repository and invoke build, test and/or deployment actions
