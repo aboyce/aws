@@ -2,7 +2,7 @@
 
 ## Certifications
 
-### [Certified Developer Associate](/certifications/DeveloperAssociate.md)
+### [Certified Developer Associate](/certifications/Developer%20Associate.md)
 
 ## Core Sections
 

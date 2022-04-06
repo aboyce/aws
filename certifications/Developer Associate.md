@@ -48,7 +48,6 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Use developer-authenticated identities to interact between end user devices, backend
     authentication, and Amazon Cognito
 
-### Domain 3: Development with AWS Services
 
 - 3.1 Write code for serverless applications.
   - Compare and contrast server-based vs. serverless model (e.g., micro services, stateless nature
