@@ -10,15 +10,17 @@
 
 ### [Security](/Security.md)
 
+### [Development with AWS Services](/Development%20with%20AWS%20Services.md)
+
 ## Services
 
-### [IAM](/services/IAM.md)
+### [Identity and Access Management (IAM)](/services/IAM.md)
 
-### [EC2](/services/EC2.md)
+### [Elastic Compute Cloud (EC2)](/services/EC2.md)
 
-### [ELB](/services/ELB.md)
+### [Elastic Load Balancer (ELB)](/services/ELB.md)
 
-### [RDS](/services/RDS.md)
+### [Relational Database Service (RDS)](/services/RDS.md)
 
 ### [Elasticache](/services/Elasticache.md)
 
