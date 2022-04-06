@@ -2,7 +2,7 @@
 
 _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf)_
 
-### Domain 1: [Deployment](../Deployment.md)
+### Domain 1: [Deployment](/concepts//Deployment.md)
 
 - 1.1 Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns.
   - Commit code to a repository and invoke build, test and/or deployment actions
@@ -30,7 +30,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Manage environments in individual AWS services (e.g., Differentiate between Development,
     Test, and Production in Amazon API Gateway)
 
-### Domain 2: [Security](../Security.md)
+### Domain 2: [Security](/concepts/Security.md)
 
 - 2.1 Make authenticated calls to AWS services.
   - Communicate required policy based on least privileges required by application.
@@ -48,6 +48,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Use developer-authenticated identities to interact between end user devices, backend
     authentication, and Amazon Cognito
 
+### Domain 3: [Development with AWS Services](/concepts/Development%20with%20AWS%20Services.md)
 
 - 3.1 Write code for serverless applications.
   - Compare and contrast server-based vs. serverless model (e.g., micro services, stateless nature
