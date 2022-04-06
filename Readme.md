@@ -16,6 +16,8 @@
 
 ### [Lambda](/services/Lambda.md)
 
+### [DynamoDB](/services/DynamoDB.md)
+
 ### [API Gateway](/services/API%20Gateway.md)
 
 ### [Elastic Compute Cloud (EC2)](/services/EC2.md)
