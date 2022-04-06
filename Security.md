@@ -58,48 +58,7 @@ Customers can also encrypt data before storage (client-side encryption).
 
 ### AWS Identity and Access Management (IAM)
 
-#### IAM User
-
-An IAM user with Administrator permissions is not the same as the account root user.
-
-- Represents a person or service
-- Is authenticated through credentials
-  - Username and password
-  - Access key and secret key
-
-#### IAM Group
-
-- A collection of IAM users
-- Can specify permissions for multiple users
-- Is easier to manage than individual user permissions
-
-#### IAM Role
-
-- You should prefer IAM roles over access keys
-- A set of permissions that grant access to actions and resources
-- Not assigned to any one person, it is assignable to anyone who needs it
-- Can delegate access to IAM user, applications, and services
-- Does not have standard, long term credentials, such as passwords or access tokens
-- When a user assumes a role, temporary credentials are automatically created and assigned to that user
-- Can be used to grant access to resources across AWS accounts
-- Can be used to grant access to applications without having to embed keys into the application
-
-#### IAM Policy
-
-- Defines authorisation (granting permissions)
-- Usually stored as JSON documents
-- They are assigned to users, groups, and roles
-- Policy concepts:
-  - Elements such as:
-    - `Effect`
-    - `Action`
-    - `Resource`
-    - `Condition`
-    - `Principle`
-  - Evaluation logic such as:
-    - `Explicit Deny`
-    - `Explicit Allow`
-    - `Implicit Deny`
+[IAM](./services/IAM.md)
 
 ### AWS Security Token Service (STS)
 
