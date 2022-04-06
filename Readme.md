@@ -4,13 +4,9 @@
 
 ### [Certified Developer Associate](/certifications/Developer%20Associate.md)
 
-## Core Sections
-
-### [Deployment](/Deployment.md)
-
-### [Security](/Security.md)
-
-### [Development with AWS Services](/Development%20with%20AWS%20Services.md)
+- [Deployment](/Deployment.md)
+- [Security](/Security.md)
+- [Development with AWS Services](/Development%20with%20AWS%20Services.md)
 
 ## Services
 
