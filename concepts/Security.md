@@ -48,17 +48,11 @@ Lets you provision, manage, and deploy public and private SSL/TLS certificate fo
 
 ### Protecting Data at Rest in AWS S3
 
-AWS S3 provides server-side encryption (AES-256) using AWS maintained keys or customer provided keys. It is an optional step when you upload your data, it is on by default with AWS S3 Glacier.
-
-- Amazon S3 Managed Keys (SSE-S3)
-- AWS KMS Managed Keys (SSE-KMS)
-- Custom Provided Keys (SSE-C)
-
-Customers can also encrypt data before storage (client-side encryption).
+See Encryption in [S3](../services/S3.md)
 
 ### AWS Identity and Access Management (IAM)
 
-[IAM](./services/IAM.md)
+See [IAM](./services/IAM.md)
 
 ### AWS Security Token Service (STS)
 

@@ -12,6 +12,8 @@
 
 ### [Identity and Access Management (IAM)](/services/IAM.md)
 
+### [Simple Storage Service (S3)](/services/S3.md)
+
 ### [Elastic Compute Cloud (EC2)](/services/EC2.md)
 
 ### [Elastic Load Balancer (ELB)](/services/ELB.md)
