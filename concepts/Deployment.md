@@ -130,6 +130,12 @@ The A2P functionality enables you to send messages to users at scale via SMS, mo
 
 A low-code, visual workflow service that can be used to build distributed applications, automate IT and business processes, and build data and machine learning pipelines with AWS services. The workflows manage failures, retries, parallelisation, service integrations, and observability, allowing developers to focus on the the business logic.
 
+They provide a graphical console to arrange and visualise the components of your application as a series of steps. This makes it easy to build multi-step applications.
+
+They log the state of each step to help with debugging and automatically trigger and track steps, handling retries if there are errors.
+
+Can have step branches or parallel.
+
 #### AWS Kinesis, AWS Athena (Analytics)
 
 AWS Kinesis makes it easy to collect, process, and analyse real-time, streaming data. Can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data. Allows you to process and analyse data as it arrives instantly rather than having to wait till all of the data is collected.
