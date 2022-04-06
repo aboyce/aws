@@ -14,6 +14,7 @@
 
 ### [Simple Storage Service (S3)](/services/S3.md)
 
+### [Lambda](/services/Lambda.md)
 ### [Elastic Compute Cloud (EC2)](/services/EC2.md)
 
 ### [Elastic Load Balancer (ELB)](/services/ELB.md)
