@@ -28,6 +28,8 @@
 
 ### [CloudFront](/services/CloudFront.md)
 
+### [X-Ray](/services/X-Ray.md)
+
 ## Concepts
 
 ### [Data](/concepts/Data.md)
