@@ -11,3 +11,5 @@
 ### [Security](/Security.md)
 
 ### [IAM](/services/IAM.md)
+
+### [EC2](/services/EC2.md)
