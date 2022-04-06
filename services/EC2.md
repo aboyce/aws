@@ -4,6 +4,17 @@ Provides resizable compute capacity.
 
 New instances up in minutes, allowing rapid scaling both up and down.
 
+Instances are created from Amazon Machine Instances (AMI).
+
+### EC2 with Roles
+
+- You can create EC2 Roles and permissions that are attached to an EC2 instance
+- This allows AWS access natively in EC2
+- They can be hot swapped/used
+- Roles allow you avoid having to use Access Ids and Secrets
+- Roles are preferred from a security perspective
+- Policy changes take immediate effect
+
 ### Payment Options
 
 #### On Demand
