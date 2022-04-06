@@ -18,6 +18,7 @@
 
 ### [ELB](/services/ELB.md)
 
+### [RDS](/services/RDS.md)
 ## Concepts
 
 ### [Data](/concepts/Data.md)
