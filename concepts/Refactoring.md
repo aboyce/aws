@@ -5,11 +5,17 @@
 - Simple applications run on persistent servers ❌
 - Serverless solutions is provisioned at the time of need ✔
 
+[]()
+
 - Applications communicate directly with one another ❌
 - Message queues handle communication between applications ✔
 
+[]()
+
 - Static web assets are stored locally on instances ❌
 - Static web assets are stored externally, such as on S3 ✔
+
+[]()
 
 - Back-end servers handle user authentication and user state storage ❌
 - User authentication and user state storage are handled by managed AWS services ✔
