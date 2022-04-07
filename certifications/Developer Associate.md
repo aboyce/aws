@@ -48,7 +48,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Use developer-authenticated identities to interact between end user devices, backend
     authentication, and Amazon Cognito
 
-### Domain 3: [Development with AWS Services](/concepts/Development%20with%20AWS%20Services.md)
+### Domain 3: Development with AWS Services
 
 - 3.1 Write code for serverless applications.
   - Compare and contrast server-based vs. serverless model (e.g., micro services, stateless nature
@@ -80,7 +80,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Write resilient code that deals with failures or exceptions (i.e., retries with exponential back off
     and jitter)
 
-### Domain 4: Refactoring
+### Domain 4: [Refactoring](/concepts/Refactoring.md)
 
 - 4.1 Optimize applications to best use AWS services and features.
   - Implement AWS caching services to optimize performance (e.g., Amazon ElastiCache, Amazon

@@ -6,6 +6,7 @@
 
 - [Deployment](/concepts/Deployment.md)
 - [Security](/concepts/Security.md)
+- [Refactoring](/concepts/Refactoring.md)
 
 ### Concepts
 
