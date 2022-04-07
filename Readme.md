@@ -24,6 +24,8 @@
 
 ### [Elastic Load Balancer (ELB)](/services/ELB.md)
 
+### [Elastic Beanstalk](/services/Elastic%20Beanstalk.md)
+
 ### [Relational Database Service (RDS)](/services/RDS.md)
 
 ### [Elasticache](/services/Elasticache.md)
