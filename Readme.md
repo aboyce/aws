@@ -31,6 +31,8 @@
 ### [CloudFront](/services/CloudFront.md)
 
 ### [Simple Queue Service (SQS)](/services/SQS.md)
+
+### [Simple Notification Service (SNS)](/services/SNS.md)
 ### [X-Ray](/services/X-Ray.md)
 
 ## Concepts
