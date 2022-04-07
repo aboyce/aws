@@ -89,7 +89,7 @@ The `AppSpec` file must be in the root directory.
 
 #### AWS CodePipeline
 
-Orchestrates the CI/CD pipeline, provides fast and reliable application updates. Allows you to model and visualise the release process, linking up the other services.
+Orchestrates the CI/CD pipeline, provides fast and reliable application updates. Allows you to model and visualise the release process, linking up the other services. Can trigger a CodeDeploy from a commit.
 
 #### AWS Elastic Beanstalk
 
