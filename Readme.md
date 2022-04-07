@@ -1,55 +1,55 @@
 # Amazon Web Services
 
-## Certifications
+### Certifications
 
-### [Certified Developer Associate](/certifications/Developer%20Associate.md)
+#### [Certified Developer Associate](/certifications/Developer%20Associate.md)
 
 - [Deployment](/concepts/Deployment.md)
 - [Security](/concepts/Security.md)
 - [Development with AWS Services](/concepts/Development%20with%20AWS%20Services.md)
 
-## Specifics
+### Concepts
 
-### [Identity and Access Management (IAM)](/specifics/IAM.md)
+#### [Data](/concepts/Data.md)
 
-### [Simple Storage Service (S3)](/specifics/S3.md)
+#### [Deployment](/concepts/Deployment.md)
 
-### [Lambda](/specifics/Lambda.md)
+#### [Security](/concepts/Security.md)
 
-### [DynamoDB](/specifics/DynamoDB.md)
+#### [Development with AWS Services](/concepts/Development%20with%20AWS%20Services.md)
 
-### [API Gateway](/specifics/API%20Gateway.md)
+### Specifics
 
-### [Elastic Compute Cloud (EC2)](/specifics/EC2.md)
+#### [Identity and Access Management (IAM)](/specifics/IAM.md)
 
-### [Elastic Load Balancer (ELB)](/specifics/ELB.md)
+#### [Simple Storage Service (S3)](/specifics/S3.md)
 
-### [Elastic Beanstalk](/specifics/Elastic%20Beanstalk.md)
+#### [Lambda](/specifics/Lambda.md)
 
-### [Relational Database Service (RDS)](/specifics/RDS.md)
+#### [DynamoDB](/specifics/DynamoDB.md)
 
-### [Elasticache](/specifics/Elasticache.md)
+#### [API Gateway](/specifics/API%20Gateway.md)
 
-### [CloudFront](/specifics/CloudFront.md)
+#### [Elastic Compute Cloud (EC2)](/specifics/EC2.md)
 
-### [Simple Queue Service (SQS)](/specifics/SQS.md)
+#### [Elastic Load Balancer (ELB)](/specifics/ELB.md)
 
-### [Simple Notification Service (SNS)](/specifics/SNS.md)
+#### [Elastic Beanstalk](/specifics/Elastic%20Beanstalk.md)
 
-### [Key Management Service (KMS)](/specifics/KMS.md)
+#### [Relational Database Service (RDS)](/specifics/RDS.md)
 
-### [Kinesis](/specifics/Kinesis.md)
+#### [Elasticache](/specifics/Elasticache.md)
 
-### [CloudWatch](/specifics/CloudWatch.md)
+#### [CloudFront](/specifics/CloudFront.md)
 
-### [X-Ray](/specifics/X-Ray.md)
+#### [Simple Queue Service (SQS)](/specifics/SQS.md)
 
-## Concepts
+#### [Simple Notification Service (SNS)](/specifics/SNS.md)
 
-### [Data](/concepts/Data.md)
+#### [Key Management Service (KMS)](/specifics/KMS.md)
 
-### [Deployment](/concepts/Deployment.md)
+#### [Kinesis](/specifics/Kinesis.md)
 
-### [Security](/concepts/Security.md)
+#### [CloudWatch](/specifics/CloudWatch.md)
 
-### [Development with AWS Services](/concepts/Development%20with%20AWS%20Services.md)
+#### [X-Ray](/specifics/X-Ray.md)
