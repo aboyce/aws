@@ -209,11 +209,15 @@ Simple notification and queueing services, more information on SNS [here](../spe
 
 A low-code, visual workflow service that can be used to build distributed applications, automate IT and business processes, and build data and machine learning pipelines with AWS services. The workflows manage failures, retries, parallelisation, service integrations, and observability, allowing developers to focus on the the business logic.
 
-They provide a graphical console to arrange and visualise the components of your application as a series of steps. This makes it easy to build multi-step applications.
+They provide a graphical console to arrange and visualise the components of your application as a series of steps. This makes it easy to build multi-step applications. They provide blueprints for commonly encountered workflows.
 
-They log the state of each step to help with debugging and automatically trigger and track steps, handling retries if there are errors.
+They log the state of each step to help with debugging and automatically trigger and track steps, handling retries and fallback if there are errors.
 
-Can have step branches or parallel.
+Can have step branches or parallel and can handle millions of steps simultaneously. Can handle if the step takes seconds or months to complete.
+
+##### State Language
+
+Amazon State Language is a JSON based structured language used to define your state machine. A collection of state that can do work, task states, determine which states to transition to the next, which are called choice states. If execution is stopped with an error, you get a failed state.
 
 #### AWS Kinesis, AWS Athena (Analytics)
 
