@@ -33,6 +33,9 @@
 ### [Simple Queue Service (SQS)](/services/SQS.md)
 
 ### [Simple Notification Service (SNS)](/services/SNS.md)
+
+### [Key Management Service (KMS)](/services/KMS.md)
+
 ### [X-Ray](/services/X-Ray.md)
 
 ## Concepts
