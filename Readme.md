@@ -38,6 +38,8 @@
 
 ### [Key Management Service (KMS)](/services/KMS.md)
 
+### [Kinesis](/services/Kinesis.md)
+
 ### [X-Ray](/services/X-Ray.md)
 
 ## Concepts
