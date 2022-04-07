@@ -112,7 +112,25 @@ Configuration management service that provides managed instances of Chef and Pup
 
 #### AWS CloudFormation
 
-Infrastructure as Code.
+Infrastructure as Code, with resources defined as CloudFormation templates. CloudFormation interprets the template and makes the appropriate API calls.
+
+It can be YAML or JSON, and these can/should be version controlled.
+
+Can manage updates and dependencies.
+
+Can rollback or delete the stack.
+
+Main sections are:
+
+- `Parameters`; input customer values
+- `Conditions`; pre requirements etc.
+- `Resources` (mandatory); the resources to create
+- `Mappings`; e.g. region, AMI
+- `Transforms`; reference code snippets
+
+##### Nested Stacks
+
+Allows reuse of code (CloudFormation templates) for common cases, prevents copy/pasting. Allows you to keep generic templates and reference them in your template. Declared as a resource that is of type `AWS::CouldFormation:Stack`. This is the same as Terraform modules.
 
 ##### Template
 
