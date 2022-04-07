@@ -118,13 +118,7 @@ Fully managed, serverless, key-value NoSQL database designed to run at any scale
 
 #### AWS SNS & SQS (Interprocess Messaging)
 
-Simple Notification Service, a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
-
-The pub/sub functionality provides topics for push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications.
-
-You can use topics to fanout message to multiple subscribers, including AWS SQS queue, AWS Lambda functions, HTTPS endpoints, and AWS Kinesis Data Firehose, for parallel processing.
-
-The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
+Simple notification and queueing services, more information on SNS [here](../specifics/SNS.md) and more information on SQS [here](../specifics/SQS.md).
 
 #### AWS Step Functions (Orchestration)
 
@@ -138,7 +132,7 @@ Can have step branches or parallel.
 
 #### AWS Kinesis, AWS Athena (Analytics)
 
-AWS Kinesis makes it easy to collect, process, and analyse real-time, streaming data. Can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data. Allows you to process and analyse data as it arrives instantly rather than having to wait till all of the data is collected.
+AWS Kinesis data processing, more information on the service [here](../specifics/Kinesis.md)
 
 AWS Athena is an interactive query service that makes it easy to analyse data in AWS S3 using standard SQL. It is serverless, so there is no infrastructure to manage, you just pay for the queries you make.
 
