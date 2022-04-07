@@ -24,7 +24,68 @@ Up to the user to decide what commercial tool they prefer or are using.
 
 #### AWS CodeDeploy
 
-Automates deployments to any instance, can deploy to EC2 or external servers. Works with any language on any operating system. Integrates with 3rd party tools and other AWS services.
+Automates deployments to any instance, can deploy to EC2, external servers, or Lambda. Works with any language on any operating system. Integrates with 3rd party tools and other AWS services.
+
+Can integrate with:
+
+- Jenkins
+- Github
+- Atlassian
+- Ansible
+- Chef
+- Puppet
+
+##### In Place Deployment
+
+It works through the instances and deploys them out. This causes reduced capacity. EC2 and on-premise only.
+
+##### Blue/Green Deployment
+
+Brings up new instances and swaps over when ready. No downtime and quick roll back.
+
+##### Key Terms
+
+- **Deployment Group** is a set of EC2 instances or Lambda where the new version is deployed
+- **Deployment** is the process of applying update
+- **Deployment Configuration** is the deployment rules and success/failure conditions
+- **AppSpec File** defines deployment actions
+- **Revision** is everything you need for a new version
+- **Application** is the unique Id for the app you want to deploy, ensures correct combination of everything
+
+##### AppSpec File
+
+It is used to define parameters that are used for a CodeDeploy deployment.
+
+For Lambda deployments:
+
+- `version`, which is reserved for future use
+- `resources` is the name/property of lambda
+- `hooks` are Lambda functions to run at set points in the deployment lifecycle, can be used to test/validate deployments, e.g. `BeforeInstall`.
+
+For EC2/On-Premise:
+
+- `version`, which is reserved for future use
+- `os` is the operating system
+- `files` is the `source` and `destination` of the required files
+- `hooks` specifies scripts to run within the deployment lifecycle
+
+The `AppSpec` file must be in the root directory.
+
+##### Hooks
+
+1. `BeforeBlockTraffic` runs on instance before the are deregistered from the load balancer
+2. `BlockTraffic` run when it is deregistered from the load balancer
+3. `AllowBlockTraffic` runs tasks on instances after they are deregistered
+4. `ApplicationStop`
+5. `DownloadBundle`
+6. `BeforeInstall`
+7. `Install`
+8. `AfterInstall`
+9. `ApplicationStart`
+10. `ValidateService`
+11. `BeforeAllowTraffic`
+12. `AllowTraffic`
+13. `AfterAllowTraffic`
 
 #### AWS CodePipeline
 
