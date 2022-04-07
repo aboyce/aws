@@ -1,4 +1,4 @@
-Elastic Beanstalk## Elastic Beanstalk
+## Elastic Beanstalk
 
 Allows you to deploy your application without worrying about the infrastructure or underlying technologies. Targeted at full stack environments for web and worker tiers. Simple to use but less fine grained control. Can provide dev, test environments, or full production environments with load balancing and scaling.
 
