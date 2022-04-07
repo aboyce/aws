@@ -2,7 +2,7 @@
 
 A fully managed, NoSQL database service that provides fast and predictable performance with seamless scalability. Runs exclusively on SSDs.
 
-The service stores three geographically replicas of each table to ensure high availability and durability.
+The service stores three geographically replicas of each table to ensure high availability and durability. In most cases, DynamoDBs response times are in single digit milliseconds.
 
 When reading the data, the user can decide if they want the read to be;
 
@@ -13,6 +13,7 @@ When reading the data, the user can decide if they want the read to be;
 
 Supports both document and key-value data models.
 
+- **Table**
 - **Items** think rows in a table
 - **Attributes** think columns in a table
 
@@ -81,7 +82,7 @@ You can apply filters to the query, but these are applied post Scan execution so
 
 #### Performance Improvements
 
-You can reduce the page size for fewer reads and more but smaller requests can help to reduce throttling.
+You can reduce the page size for fewer reads and more but smaller requests can help to reduce throttling, it uses fewer read operations and adds a pause between requests. Default page size is 1MB.
 
 Avoid scans if you can, think about the table design.
 
@@ -111,11 +112,11 @@ Charges apply for reading, writing, and storing data. You do not have to specify
 
 ### DynamoDB Accelerator (DAX)
 
-DAX is a fully managed, clustered in-memory cache for DynamoDB. Delivers up to a 10x read improvement and microsecond performance for millions of requests per second. It is a write-through caching system, this means that data is written to the cache as well as the backend store. If the item (read) is not available (a cache miss) then DAX performs an eventually consistent `GET` item operation against DynamoDB.
+DAX is a fully managed, clustered in-memory cache for DynamoDB. Delivers up to a 10x read improvement and microsecond performance for millions of requests per second. It is a read-through, write-through caching system, this means that data is written to the cache as well as the backend store for writes, and will keep hold of reads if they have previously been read before. If the item (read) is not available (a cache miss) then DAX performs an eventually consistent `GET` item operation against DynamoDB.
 
-Ideal for ready heavy or burst workloads. Reduces the load for reads on tables and may allow for a reduced read capacity.
+Ideal for ready heavy or burst workloads. Reduces the load for reads on tables and may allow for a reduced read capacity (and in tern potential cost savings).
 
-Allows you to point your DynamoDB API calls to the DAX cluster itself.
+Allows you to point your DynamoDB API calls to the DAX cluster itself as they both have the same API. So only requires minimal functional changes to swap over to using DAX.
 
 It is not suitable for:
 
@@ -144,9 +145,15 @@ Good solution for removing:
 
 Reduces costs by having less data.
 
+### Global Tables
+
+Allows data replication of DynamoDB tables. The changes made to an item in a replica table will be replicated to all other replicas within the same global table. In a global table, a newly written item, is usually propagated to all replica tables within seconds. It does not support partial replication of only some of the items.
+
 ### Steams
 
-Time-ordered sequence of item level modifications (insert, update, delete). Accessed by a dedicated endpoint. By default the primary key is recorded. Events are recorded at near real-time, can trigger a Lambda on event, executes Lambda code based on event. Lambda polls the DynamoDB stream. Before and after images can be captured. Apps can take actions based on the content.
+Time-ordered sequence of item level modifications (insert, update, delete) to DynamoDB tables. Accessed by a dedicated endpoint. By default the primary key is recorded. Events are recorded at near real-time, can trigger a Lambda on event, executes Lambda code based on event. Lambda polls the DynamoDB stream. Before and after images can be captured. Apps can take actions based on the content.
+
+If a new item is added to a table, the streams captures an image of the entire item, including the attributes. If an item is updated, the steam captures old and new images of any attributes modified in the item. If an item is deleted from the table, the steam captures an image of the entire item before it was deleted.
 
 Logs are encrypted at rest and stored for 24 hours.
 
