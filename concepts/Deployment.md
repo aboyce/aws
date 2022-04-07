@@ -226,3 +226,13 @@ AWS Athena is an interactive query service that makes it easy to analyse data in
 ### Serverless Application Model (SAM)
 
 CloudFormation extension optimised for serverless. It offers new serverless resource types; functions, API, and tables. Also supports anything CloudFormation supports.
+
+Provides simplified syntax for defining serverless resources (APIs, Lambda, DynamoDB tables etc.).
+
+User the SAM CLI to package the deployment code, upload to S3 and then deploy.
+
+#### Commands
+
+`sam package` packages and uploads to S3
+
+`same deploy` deploys using Cloud Formation
