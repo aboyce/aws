@@ -30,6 +30,7 @@
 
 ### [CloudFront](/services/CloudFront.md)
 
+### [Simple Queue Service (SQS)](/services/SQS.md)
 ### [X-Ray](/services/X-Ray.md)
 
 ## Concepts
