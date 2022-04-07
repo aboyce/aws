@@ -6,7 +6,6 @@
 
 - [Deployment](/concepts/Deployment.md)
 - [Security](/concepts/Security.md)
-- [Development with AWS Services](/concepts/Development%20with%20AWS%20Services.md)
 
 ### Concepts
 
