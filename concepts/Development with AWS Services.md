@@ -14,8 +14,8 @@ ACLs are used to grant permissions at the object or bucket level.
 
 A bucket policy is a resource based AWS IAM access policy, you add a policy to a bucket to grant other IAM accounts or users permissions to S3 resources.
 
-See [S3](../services/S3.md)
+See [S3](../specifics/S3.md)
 
 ### AWS DynamoDB
 
-See [DynamoDB](../services/DynamoDB.md)
+See [DynamoDB](../specifics/DynamoDB.md)

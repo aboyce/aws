@@ -77,6 +77,14 @@ Created and administered inside your account. Created by you for your specific n
 
 Authenticate using external identities (federated users), this allows the ability to grant access to AWS without having to create IAM users. It uses AWS STS to link up the user with temporary credentials that map to an IAM role.
 
+Providers:
+
+- Amazon Cognito
+- Log in with Amazon
+- Facebook
+- Google
+- OpenID Connect (OIDC)
+
 #### Cognito
 
 Provides web identity federation and:
