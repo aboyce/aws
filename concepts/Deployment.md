@@ -1,6 +1,12 @@
 ## Deployment
 
-#### AWS Code Services
+### CI/CD
+
+Continuous integration; integrating changes into environments.
+
+Continuous delivery/deployment; taking CI one step further and automatically releasing as soon as it passes all checks/stages.
+
+### AWS Code Services
 
 Source (AWS CodeCommit) -> Build (AWS CodeBuild) -> Test -> Production (AWS CodeDeploy) -> Monitor (AWS X-Ray, AWS Cloudwatch)
 
