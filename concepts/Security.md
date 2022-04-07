@@ -48,11 +48,11 @@ Lets you provision, manage, and deploy public and private SSL/TLS certificate fo
 
 ### Protecting Data at Rest in AWS S3
 
-See Encryption in [S3](../services/S3.md)
+See Encryption in [S3](../specifics/S3.md)
 
 ### AWS Identity and Access Management (IAM)
 
-See [IAM](./services/IAM.md)
+See [IAM](./specifics/IAM.md)
 
 ### AWS Security Token Service (STS)
 
@@ -65,17 +65,9 @@ You get a session, which is made up of:
 - Session Token
 - Expiration (15 minutes to 36 hours)
 
-### Identity Federation
+### Identity Federation and Web Identity Federation
 
-Authenticate using external identities (federated users), this allows the ability to grant access to AWS without having to create IAM users. It uses AWS STS to link up the user with temporary credentials.
-
-#### Web identity federation
-
-- Amazon Cognito
-- Log in with Amazon
-- Facebook
-- Google
-- OpenID Connect (OIDC)
+See [IAM](./specifics/IAM.md)
 
 #### SAML 2.0 (Security Assertion Markup Language 2.0) based federation
 
