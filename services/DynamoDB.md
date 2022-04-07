@@ -123,3 +123,38 @@ It is not suitable for:
 - Write intensive applications
 - Read light workloads
 - Apps that do not require microsecond response times
+
+### Transactions
+
+ACID (Atomic, Consistent, Isolated, Durable)
+
+Read or write multiple tables as an all or nothing operation. Allows complex business logic to all take part in one transaction, can help to reduce errors or data from getting into an invalid state.
+
+Provides the ability to check for a pre-requisite condition before writing to a table.
+
+### TTL
+
+Defines an expiry time for your data, expressed as epoch time, expired items are marked for deletion. You define the attribute that is the TTL.
+
+Good solution for removing:
+
+- Session data
+- Event logs
+- Temp data
+
+Reduces costs by having less data.
+
+### Steams
+
+Time-ordered sequence of item level modifications (insert, update, delete). Accessed by a dedicated endpoint. By default the primary key is recorded. Events are recorded at near real-time, can trigger a Lambda on event, executes Lambda code based on event. Lambda polls the DynamoDB stream. Before and after images can be captured. Apps can take actions based on the content.
+
+Logs are encrypted at rest and stored for 24 hours.
+
+### Provisioned Throughput Exceeded and Exponential Back-off
+
+Seen if the request rate is too high for the read/write capacity.
+
+SDK automatically retries the request until successful. If you are not using the SDK, you can:
+
+- Reduce the request frequency
+- Use exponential back-off (using progressively longer waits)
