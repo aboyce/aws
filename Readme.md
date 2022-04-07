@@ -40,6 +40,8 @@
 
 ### [Kinesis](/services/Kinesis.md)
 
+### [CloudWatch](/services/CloudWatch.md)
+
 ### [X-Ray](/services/X-Ray.md)
 
 ## Concepts
