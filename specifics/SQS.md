@@ -12,7 +12,7 @@ Can link auto-scaling with queue size.
 
 Message can be kept in a queue for between 1 minute and 14 days. Default retention is 4 days.
 
-SQS is a poll based system. Long polling is a blocking call that waits for a response or a timeout. Can be used to prevent constant polling.
+SQS is a poll based system. Long polling is a blocking call that waits for a response or a timeout. Can be used to prevent constant polling, this can be modified with the Receive Message Wait Time Seconds.
 
 ### Standard Queues
 
