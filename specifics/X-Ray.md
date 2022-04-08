@@ -1,10 +1,14 @@
 ## X-Ray
 
-Way of diving into AWS services to find out what has happened.
+Way of diving into AWS services to find out what has happened. It can be especially useful piecing together the parts and debugging a microservice architecture.
+
+Provides an end-to-end view of your requests as they travel through your application and shows a map of your application's underlying components. The service maps can highlight bottlenecks in the design as it may become obvious which components are getting hit the hardest and by what.
 
 Can use the X-Ray SDK to send data to it.
 
 Will create diagrams to display progress.
+
+### SDK
 
 The SDK provides:
 
