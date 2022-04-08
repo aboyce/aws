@@ -48,11 +48,11 @@ Lets you provision, manage, and deploy public and private SSL/TLS certificate fo
 
 ### Protecting Data at Rest in AWS S3
 
-See Encryption in [S3](../specifics/S3.md)
+See Encryption in [S3](/specifics/S3.md)
 
 ### AWS Identity and Access Management (IAM)
 
-See [IAM](./specifics/IAM.md)
+See [IAM](/specifics/IAM.md)
 
 ### AWS Security Token Service (STS)
 
@@ -67,7 +67,7 @@ You get a session, which is made up of:
 
 ### Identity Federation and Web Identity Federation
 
-See [IAM](./specifics/IAM.md)
+See [IAM](/specifics/IAM.md)
 
 #### SAML 2.0 (Security Assertion Markup Language 2.0) based federation
 

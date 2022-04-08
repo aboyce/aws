@@ -93,7 +93,7 @@ Orchestrates the CI/CD pipeline, provides fast and reliable application updates.
 
 #### AWS Elastic Beanstalk
 
-Deploying applications to Elastic Beanstalk, more information on the service [here](../specifics/Elastic%20Beanstalk.md)
+Deploying applications to Elastic Beanstalk, more information on the service [here](/specifics/Elastic%20Beanstalk.md)
 
 Components:
 
@@ -203,7 +203,7 @@ Fully managed, serverless, key-value NoSQL database designed to run at any scale
 
 #### AWS SNS & SQS (Interprocess Messaging)
 
-Simple notification and queueing services, more information on SNS [here](../specifics/SNS.md) and more information on SQS [here](../specifics/SQS.md).
+Simple notification and queueing services, more information on SNS [here](/specifics/SNS.md) and more information on SQS [here](/specifics/SQS.md).
 
 #### AWS Step Functions (Orchestration)
 
@@ -221,7 +221,7 @@ Amazon State Language is a JSON based structured language used to define your st
 
 #### AWS Kinesis, AWS Athena (Analytics)
 
-AWS Kinesis data processing, more information on the service [here](../specifics/Kinesis.md)
+AWS Kinesis data processing, more information on the service [here](/specifics/Kinesis.md)
 
 AWS Athena is an interactive query service that makes it easy to analyse data in AWS S3 using standard SQL. It is serverless, so there is no infrastructure to manage, you just pay for the queries you make.
 
