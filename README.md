@@ -7,6 +7,7 @@
 - [Deployment](/concepts/Deployment.md)
 - [Security](/concepts/Security.md)
 - [Refactoring](/concepts/Refactoring.md)
+- [Monitoring and Troubleshooting](/concepts/Monitoring%20and%20Troubleshooting.md)
 
 ### Concepts
 

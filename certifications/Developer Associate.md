@@ -92,7 +92,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
   - Develop in order to enable horizontal scalability
   - Externalize state
 
-### Domain 5: Monitoring and Troubleshooting
+### Domain 5: [Monitoring and Troubleshooting](/concepts/Monitoring%20and%20Troubleshooting.md)
 
 - 5.1 Write code that can be monitored.
   - Create custom Amazon CloudWatch metrics
