@@ -4,6 +4,16 @@ Monitoring and observability service built for DevOps engineers, developers, sit
 
 By default, logs are stored indefinitely.
 
+You can read CloudWatch metrics programmatically using the CLI or API, this allows you to create your own custom handling or notifications with custom scripts or applications. This does not just have to be tech related, you could link up weather or external factors to trigger custom alarms to increase application scaling etc.
+
+### Alarms
+
+Alarms can be configured that will trigger when a specific condition is met. These can be linked up with scripts to handle the scenario, e.g. restart an unreachable EC2 instance.
+
+## Notifications
+
+Alarms can be configured to publish a notification using SNS or SQS services.
+
 ### Categories
 
 #### Vended Logs
@@ -16,7 +26,7 @@ Currently, more that 30 AWS services publish logs to CloudWatch. They include AP
 
 #### Custom Logs
 
-These are logs from your application and on-premise resources.
+These are logs from your application and on-premise resources. You can use the CLI or API to send in these custom logs.
 
 ### EC2
 
