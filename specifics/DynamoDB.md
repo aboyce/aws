@@ -2,12 +2,16 @@
 
 A fully managed, NoSQL database service that provides fast and predictable performance with seamless scalability. Runs exclusively on SSDs.
 
+Autoscaling, partitions/repartitions as your data and table size grows.
+
 The service stores three geographically replicas of each table to ensure high availability and durability. In most cases, DynamoDBs response times are in single digit milliseconds.
 
 When reading the data, the user can decide if they want the read to be;
 
 - **Eventually consistent** (default), usually consistent within a second, repeating a read should update
 - **Strongly consistent**, returns a result that reflects all successful prior writes
+
+Can use `PutItem` or `BatchWriteItem` to insert items. `GetItem` or `BatchGetItem` to retrieve, if you have the composite primary keys enabled you can use the query API.
 
 ### Structure
 
@@ -90,7 +94,9 @@ Can use parallel scans if the database is not under much load.
 
 ### Provisioned Throughput
 
-Provisioned throughput is measured in capacity units.
+Provisioned throughput is measured in capacity units. You are charged for your provisioned read and write throughput by the hour if you use it or not.
+
+If you want to exceed reads or writes of 10,000 capacity units for a table, contact Amazon.
 
 When you create a table (and not using auto-scaling) you specify your requirements in terms of:
 
@@ -104,7 +110,7 @@ The math (Strongly Consistent Write = SCW, Eventually Consistent Write = ECR):
 
 If your application reads/writes larger items it will consume more capacity units and will cost more.
 
-When calculating requirements, ensure you round to the nearest whole capacity unit when working it out.
+When calculating requirements, ensure you round to the nearest whole capacity unit when working it out. 25 read and 25 write capacity units is the account level free tier.
 
 ### On Demand Capacity
 
