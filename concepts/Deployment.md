@@ -18,6 +18,10 @@ Source code repository. Equivalent to Github or Bitbucket.
 
 Compiles source code, runs test and created packages. Equivalent to Jenkins.
 
+### AWS CodeStar
+
+Enables you to quickly develop, build and deploy applications on AWS. Provides a unified interface, enabling you to easily manage your software development activities in one place. Allows your whole team to work together securely. Each project comes with a dashboard powered by JIRA. There is no charge, you are only charged for the resources that are required, EC2 instances etc. Uses IAM for acces.
+
 #### Test
 
 Up to the user to decide what commercial tool they prefer or are using.
