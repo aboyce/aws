@@ -50,3 +50,35 @@ For both UltraWarm and Cold Storage, it adds compute nodes on top of the data ba
 Fully-managed lowest cost storage tier that makes it easy to securely store and analyse historical logs on-demand. Enables you to fully detach storage from compute when they are not actively performing analysis on their data and allows you to keep your data readily available at low cost. It is also backed by S3. It is made available via UltraWarm.
 
 You can store any amount of data in cold storage.
+
+### Cross-Cluster Search
+
+Enabled performing queries and aggregation across two connected clusters. It works by setting up a light weight uni-directional connection between participating clusters.
+
+Participating domains can belong to two different AWS accounts. They have to be in the same region.
+
+### Cross-Cluster Replication
+
+Allows the automation of copying and synchronising indices from one cluster to another at low latency in the same or different regions.
+
+It does not currently support UltraWarm or Cold Storage.
+
+### Trace Analytics
+
+Allows the finding and fixing of performance problems in distributed applications in quicker time. It is built using OpenTelemetry.
+
+It is an integrated feature and is available to all customers at no extra charge.
+
+Currently works with:
+
+- Jaeger
+- Zipkin
+- X-Ray
+
+Has been tested for production use and is supported by AWS.
+
+### Name Change
+
+To upgrade from ElasticSearch to OpenSearch, a blue/green deployment is used. It should happen without any impact to search/query, although there may be some outages in regards to security related settings can cause dashboard issues.
+
+It is wire-compatible with ElasticSearch, so you should not see any changes after switching. Just ensure all of you libraries are up to date.

@@ -21,6 +21,8 @@
 
 ### Specifics
 
+#### [OpenSearch Service](/specifics/OpenSearch%20Service.md)
+
 #### [Identity and Access Management (IAM)](/specifics/IAM.md)
 
 #### [Simple Storage Service (S3)](/specifics/S3.md)
