@@ -6,7 +6,7 @@ AWS Kinesis makes it easy to collect, process, and analyse real-time, streaming 
 
 You can build custom applications that process or analyse streaming data for specialised needs. You can add various types of data such as clickstreams, application logs, and social media to a Kinesis data stream from hundreds of thousands of sources.
 
-Data is sent to steams and stored in shards. Default storage is 24 hours but can be up to 7 days. You can then pass this data onto consumers. Can attach up to 20 consumers per stream, each with its own dedicated read throughput. It will scale automatically by default.
+Data is sent to steams and stored in shards. Default storage is 24 hours but can be up to 7 days. Long term data retention greater than 7 days and up to 365 days lets you reprocess old data for use cases such as algorithm back testing, data store backfills, and auditing. You can then pass this data onto consumers. Can attach up to 20 consumers per stream, each with its own dedicated read throughput. It will scale automatically by default.
 
 They synchronously replicates data across three AZs.
 
@@ -44,6 +44,55 @@ A unit of data stored in a data stream, composed of a sequence number, partition
 #### Partition Key
 
 Used to segregate and route records to different shards of a data stream specified by you data producer whilst adding data to the data stream. For example, you could have shards 1 and 2, you configure your producer to use two partition keys (A and B) so that all records with key A are added to shard 1 and all records with key B are added to shard 2.
+
+#### Sequence Number
+
+A unique identifier for each record. It is assigned by Kinesis when a data producer calls `PutRecord` or `PutRecords` operation to add data to the stream. Sequence numbers for the same partition key generally increase over time, the longer the time period between the put operations, the larger the sequence numbers become.
+
+#### Capacity Mode
+
+Determines how capacity is managed and usage is charged for a stream. You can choose between provisioned and on-demand modes. In on-demand mode, AWS manages the shards to provide the necessary throughput, you only pay for the actual throughput used. You can switch between the two modes twice a day.
+
+#### Kinesis Agent
+
+A prebuilt Java application that offers an easy way to collect and send data to the stream. You can install it on a Linux-based environment, it can monitor files and send data to your stream.
+
+#### Reading and Processing Data
+
+A consumer is an application that processes all data from a stream. You can choose between fan-out and enhanced fan-out.
+
+Shared fan-out all share a shards 2MB/second of read throughput and five transactions per second limits and require the use of `GetRecords` API.
+
+Enhanced fan-out consumer gets its own 2MB/second allotment of read throughput, allowing multiple consumers to read data from the same stream in parallel, without contending for read throughput with other consumers.
+
+#### On-Demand Mode
+
+A new on-demand mode stream has a quota of 4MB/second and 4,000 records per second for writes. By default, these streams automatically scale up to 200MB/second and 200,000 records per second for writes.
+
+#### Schema Registration
+
+Clients of Data Streams can use the AWS Glue Schema Registry, a serverless feature of Glue. This is available at no additional charge.
+
+#### Encryption
+
+You can add encryption either by:
+
+- Using the fully managed server-side encryption, it automatically encrypts and decrypts data as you put and get it from the data stream.
+- You can write encrypted data to the stream by encrypting and decrypting client side.
+
+Server-side encryption makes reading or writing impossible if the user does not have permission to use the key selected for encryption.
+
+There is a cost for server-side encryption, however, if you are using the AWS managed KMS key for Kinesis and are not exceeding free tier KMS usage your server-side encryption is free.
+
+#### Working out the Required Throughput
+
+```
+incoming_write_bandwidth_in_KB = average_data_size_in_KB * number_of_records_per_second
+
+outgoing_read_bandwidth_in_KB = incoming_write_bandwidth_in_KB * number_of_consumers
+
+number_of_shards = max (incoming_write_bandwidth_in_KB/1000, outgoing_read_bandwidth_in_KB/2000)
+```
 
 ## Firehose
 
