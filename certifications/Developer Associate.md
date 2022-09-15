@@ -123,8 +123,8 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
 
 #### Analytics:
 
-- Amazon Elasticsearch Service (Amazon ES)
-- Amazon Kinesis
+- Amazon Elasticsearch Service (Amazon ES) ✓
+- Amazon Kinesis ✓
 
 #### Application Integration:
 
