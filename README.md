@@ -57,4 +57,6 @@
 
 #### [CloudWatch](/specifics/CloudWatch.md)
 
+#### [EventBridge](/specifics/EventBridge.md)
+
 #### [X-Ray](/specifics/X-Ray.md)
