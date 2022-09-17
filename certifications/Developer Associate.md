@@ -128,7 +128,7 @@ _Taken from [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification
 
 #### Application Integration:
 
-- Amazon EventBridge (Amazon CloudWatch Events)
+- Amazon EventBridge (Amazon CloudWatch Events) ✓
 - Amazon Simple Notification Service (Amazon SNS)
 - Amazon Simple Queue Service (Amazon SQS)
 - AWS Step Functions

@@ -16,6 +16,8 @@ The latency is about half a second, but this can vary.
 
 You can tag rules, but you cannot tag event buses or event sources.
 
+You can have cross-account events.
+
 ### Schemas
 
 You can generate code from your schema in Java, Python, and TypeScript.
@@ -32,6 +34,14 @@ This is a set of new features that would enable customer to connect data from th
 
 ### Global Endpoints
 
-Makes it easier for you to build highly available event-driven applications.
+Makes it easier for you to build highly available event-driven applications. You can replicate your events across primary and secondary regions to enable failover with minimum data loss along with the ability to failover automatically to a backup Region in the case of service disruptions.
 
-https://aws.amazon.com/eventbridge/faqs/
+You can configure failover criteria using CloudWatch alarms.
+
+You publish events to the global endpoint, the events are routed to the event bus in your primary region. If errors are detected in the primary region, your health check is marked as unhealthy and incoming events are routed to the secondary region.
+
+They are suitable for applications that do not require idempotency or can handle idempotency across regions. They are also well suited for applications that are tolerant of having up to 420 seconds of events being not replicated.
+
+You should turn on replication to minimise the data at risk during a service disruption.
+
+Global endpoints are available for custom events only, there will be support for events from AWS services in the future.
