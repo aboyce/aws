@@ -19,6 +19,8 @@
 
 #### [Development with AWS Services](/concepts/Development%20with%20AWS%20Services.md)
 
+#### [Machine Learning](/concepts/Machine%20Learning.md)
+
 ### Specifics
 
 #### [OpenSearch Service](/specifics/OpenSearch%20Service.md)
