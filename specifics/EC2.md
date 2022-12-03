@@ -85,6 +85,16 @@ Protected in availability zones.
 
 'Root Device Volume' is the OS disk.
 
+Can be attached to only one instance at a time.
+
+#### Placement Groups
+
+You can control the EC2 instance placement strategy.
+
+- Cluster: clusters instances into a low-latency group in a single Availability Zone
+- Spread: spreads instances across underlying hardware (max 7 instances per group per AZ), for critical applications
+- Partition: similar to spread, it spreads the instances across many different partitions (which rely on different sets of racks) within an AZ. Scales to 100s of EC2 instances per group.
+
 #### EBS Disk Types
 
 ##### Throughput Optimised HDD (st1)
@@ -124,6 +134,7 @@ Protected in availability zones.
 - 99.8% - 99.9% durability
 - 4GB - 16TB
 - 64,000 IOPS
+- You can use this in Multi-Attach, so it is connected to multiple (up to 16) EC2 instances in the same AZ.
 
 ##### Provisioned IOPS SSD (io2)
 
@@ -132,6 +143,7 @@ Protected in availability zones.
 - 99.999% durability
 - 4GB - 16TB
 - 64,000 IOPS
+- You can use this in Multi-Attach, so it is connected to multiple (up to 16) EC2 instances in the same AZ.
 
 ##### Provisioned IOPS SSD (io2 Block Express)
 
@@ -140,3 +152,9 @@ Protected in availability zones.
 - 99.999% durability
 - 4GB - 64TB
 - 256,000 IOPS
+
+#### EC2 Instance Store
+
+EBS volumes are network drives with good performance but not suitable for high performance.
+
+For high performance you should use EC2 Instance Store. The issue is they lose their storage if they are stopped. These are good for buffers, caches, or temporary content.
